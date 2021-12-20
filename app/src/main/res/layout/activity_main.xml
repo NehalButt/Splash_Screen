@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/redcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Enter Red color"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/bluecolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Enter Blue color"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/greencolor"
+        app:layout_constraintStart_toStartOf="@+id/greencolor"
+        app:layout_constraintTop_toBottomOf="@+id/greencolor" />
+
+    <EditText
+        android:id="@+id/greencolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Enter Green color"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/redcolor"
+        app:layout_constraintStart_toStartOf="@+id/redcolor"
+        app:layout_constraintTop_toBottomOf="@+id/redcolor" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:backgroundTint="#000000"
+        android:text="Generate Your Color"
+        app:layout_constraintEnd_toEndOf="@+id/bluecolor"
+        app:layout_constraintStart_toStartOf="@+id/bluecolor"
+        app:layout_constraintTop_toBottomOf="@+id/bluecolor" />
+
+    <TextView
+        android:id="@+id/Hexcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="177dp"
+        android:text="Hexcode"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="10dp"
+        android:text="Hexcode Generator"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/redcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
